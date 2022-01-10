@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilerUploader - Home</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link href="/CSS/Fontawesome/css/all.css" rel="stylesheet">
+    <!--load all styles -->
+    <script src="JS/index.js" defer></script>
+    <script src="JS/login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body onload="checkLoggedIn()">
+
+    <!-- MESSAGE BOX -->
+    <div id="message-box" class="message-hide">
+        <p id="message-text"></p>
+    </div>
+
+    <!-- LOADER PAGE (to protect the content behind it) -->
+    <div id="loader">
+
+    </div>
+
+
+    <!-- MAIN PART -->
+    <div class="split-page">
+        <!-- MAIN PART 1: THE NAVIGATION PART -->
+        <div id="box1">
+            <!-- NAVIGATION -->
+            <ul class="navbar">
+                <center>
+                    <img src="IMG/Logo.png">
+                </center>
+                <h2 id="userinfo">Logged in as <span id="username-span"></span></h2>
+                <li><button onclick="showDiv('upload-image')"><i class="fas fa-cloud-upload-alt"></i>Upload image</button></li>
+                <li><button onclick="viewImages()"><i class="fas fa-images"></i>View your images</button></li>
+                <li><button onclick="logOut()"><i class="fas fa-sign-out-alt"></i>Logout</button></li>
+            </ul>
+        </div>
+
+        <!-- MAIN PART 2: THE MODULE PART -->
+        <div id="box2">
+            <center>
+                <!-- MODULE 1: TO UPLOAD IMAGES TO SERVER, BUTTON ONE IN NAVIGATION -->
+                <div id="upload-image">
+                    <div class="upload-btn">
+                        <input id="image-uploader" accept="image/png, image/gif, image/jpeg" type="file" hidden>
+                        <label id="upload-btn-label" for="image-uploader">
+                            <i class="fas fa-upload"></i>Click to upload an
+                            image
+                        </label>
+                    </div>
+                </div>
+
+                <!-- MODULE 2: TO VIEW ALL IMAGES FROM SERVER, BUTTON TWO IN NAVIGATION -->
+                <div id="show-images" class="div-hide">
+
+                </div>
+
+
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>

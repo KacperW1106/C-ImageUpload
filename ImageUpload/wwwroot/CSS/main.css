@@ -1,0 +1,248 @@
+/* GENERAL CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    background-color: #2d2d2d;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box {
+    width: 400px;
+    height: auto;
+    padding: 111px 33px 111px 33px;
+    margin: 111px 0 0 0;
+    background-color: #2d2d2d;
+    border-radius: 11px;
+}
+
+.message-hide,
+.input-hide,
+.loader-hide,
+.div-hide {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    height: 0px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transition: 0.5s;
+}
+
+i {
+    margin: 11px !important;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2d2d2d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #FD878A;
+}
+
+/* INDEX PAGE CSS */
+#loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 111;
+    background-color: #2d2d2d;
+    transition: 0.5s;
+}
+
+.split-page {
+    display: flex;
+}
+
+#box1 {
+    width: 30%;
+}
+
+#box2 {
+    width: 70%;
+}
+
+
+.navbar {
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background-color: #272727;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar button {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 22px 0 22px 22px;
+    text-align: left;
+    font-weight: 300;
+    font-family: 'Poppins',
+        sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #FD878A;
+    transition: 0.5s;
+}
+
+.navbar button:hover {
+    background-color: #FD878A;
+    color: #272727;
+}
+
+.navbar img {
+    width: 188px;
+    padding: 88px 0 33px 0;
+}
+
+#userinfo {
+    text-align: center;
+    color: #FD878A;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 33px;
+}
+
+#username-span {
+    background-color: #FD878A;
+    border-radius: 5px;
+    padding: 5px;
+    color: #272727;
+}
+
+.upload-btn {
+    margin-top: 40%;
+}
+
+#upload-btn-label {
+    background-color: #FD878A;
+    color: white;
+    padding: 33px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#upload-image, #show-images {
+    transition: 0.5s;
+}
+
+#show-images {
+    margin-top: -30%;
+}
+
+#show-images div {
+    display: block;
+    width: 100%;
+    padding: 33px 0 33px 0;
+}
+
+#show-images img {
+    width: 77%;
+ }
+
+#show-images button {
+    display: block;
+    width: 30%;
+    padding: 11px;
+    background-color: #FD878A;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#show-images button:hover, #upload-btn-label:hover {
+    transform: scale(1.1)
+}
+
+/* LOGIN PAGE CSS */
+#message-box {
+    position: fixed !important;
+    margin: 0px auto auto auto !important;
+    padding: 11px 0 11px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #FD878A;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    z-index: 155;
+    transition: 0.5s;
+}
+
+#login-logo {
+    width: 166px;
+}
+
+.login-form input,
+.login-form button {
+    display: block;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.login-form button:hover {
+    transform: scale(1.1);
+}
+
+.login-form input {
+    width: 222px;
+    height: 22px;
+    padding: 7px;
+    margin: 11px;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px rgb(228, 228, 228);
+    transition: 0.5s;
+}
+
+.login-form input::placeholder {
+    color: #2d2d2d;
+    opacity: 0.4;
+    font-weight: 300;
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+.login-form button {
+    display: inline-block;
+    justify-items: left;
+    width: 113px;
+    justify-content: left;
+    padding: 11px;
+    margin: 5px 2.2px 0 2.2px;
+    background-color: #FD878A;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 900;
+}
